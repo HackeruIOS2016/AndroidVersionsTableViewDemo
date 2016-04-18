@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iEk-5l-4Jk">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Detail View Controller-->
+        <!--Version Details-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="DetailViewController" customModule="AndroidVersionTableViewDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CupCake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOp-Da-Aca">
-                                <rect key="frame" x="97" y="28" width="126" height="28"/>
+                                <rect key="frame" x="97" y="72" width="126" height="28"/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -32,20 +32,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="240" verticalCompressionResistancePriority="240" image="Cupcake" translatesAutoresizingMaskIntoConstraints="NO" id="NZu-fE-4mi">
-                                <rect key="frame" x="27" y="64" width="267" height="166"/>
+                                <rect key="frame" x="27" y="108" width="267" height="166"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="166" id="bxn-VD-KOy"/>
                                     <constraint firstAttribute="width" secondItem="NZu-fE-4mi" secondAttribute="height" multiplier="267:166" id="oPA-je-YLx"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="240" verticalCompressionResistancePriority="740" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hK3-rw-VAR">
-                                <rect key="frame" x="24" y="238" width="272" height="199"/>
+                                <rect key="frame" x="24" y="282" width="272" height="155"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.99447513812154698" blue="0.73161271381316539" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.092524878680706024" green="0.64431697130203247" blue="0.46660494804382324" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DOp-Da-Aca" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="3aY-Vz-F7N"/>
                             <constraint firstItem="NZu-fE-4mi" firstAttribute="top" secondItem="DOp-Da-Aca" secondAttribute="bottom" constant="8" id="5AF-7u-STK"/>
@@ -59,6 +59,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="63F-Oo-0gC" secondAttribute="bottom" id="rZU-9E-Bd0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Version Details" id="vpt-SA-jXU"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="versionDescriptionLabel" destination="hK3-rw-VAR" id="beH-yq-aff"/>
@@ -69,9 +70,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="514" y="121"/>
+            <point key="canvasLocation" x="1326" y="121"/>
         </scene>
-        <!--Android Table View Controller-->
+        <!--Android Versions-->
         <scene sceneID="v7f-jb-wpy">
             <objects>
                 <tableViewController id="PIp-ld-IGh" customClass="AndroidTableViewController" customModule="AndroidVersionTableViewDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,11 +81,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AndroidCell" textLabel="IJr-Rj-bSD" detailTextLabel="ekU-BR-6nI" imageView="D9c-rW-PPk" style="IBUITableViewCellStyleValue1" id="J9H-Js-VXP">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AndroidCell" textLabel="IJr-Rj-bSD" detailTextLabel="ekU-BR-6nI" imageView="D9c-rW-PPk" style="IBUITableViewCellStyleValue1" id="J9H-Js-VXP">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J9H-Js-VXP" id="tlg-yv-9Qn">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="CupCake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IJr-Rj-bSD">
@@ -95,7 +96,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ekU-BR-6nI">
-                                            <rect key="frame" x="295" y="12" width="10" height="20"/>
+                                            <rect key="frame" x="275" y="12" width="10" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
@@ -114,6 +115,9 @@
                             <outlet property="delegate" destination="PIp-ld-IGh" id="HiD-V3-Xfy"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Android Versions" id="fjN-ye-SPE">
+                        <barButtonItem key="backBarButtonItem" title="back" id="oOs-PJ-wmn"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="MasterToDetail" id="MBb-H4-FHc"/>
@@ -121,7 +125,31 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZ1-Rn-KYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-19" y="134"/>
+            <point key="canvasLocation" x="937" y="121"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rlv-5Y-JQl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iEk-5l-4Jk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tIk-p2-olb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.10980392156862745" green="0.52941176470588236" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="24"/>
+                            <color key="textColor" red="0.99599701166152954" green="0.99599379301071167" blue="0.99202793836593628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PIp-ld-IGh" kind="relationship" relationship="rootViewController" id="JVM-lP-tzU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0x-9w-Oxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547" y="121"/>
         </scene>
     </scenes>
     <resources>

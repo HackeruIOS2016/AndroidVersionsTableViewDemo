@@ -62,6 +62,16 @@ class AndroidTableViewController: UITableViewController {
     }
     
 
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        //get the current version using index path
+        let version = versions[indexPath.row]
+        //perform the segue and pass the version as sender
+        performSegueWithIdentifier("MasterToDetail", sender: version)
+    }
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -97,14 +107,18 @@ class AndroidTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let dest = segue.destinationViewController as? DetailViewController{
+            // Pass the selected object to the new view controller.
+            dest.data = (sender as! AndroidVersion)
+        }
+        
     }
-    */
+    
 
 }
