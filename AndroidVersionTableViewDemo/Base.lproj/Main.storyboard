@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PIp-ld-IGh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AndroidVersionTableViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DetailViewController" customModule="AndroidVersionTableViewDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,13 +18,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CupCake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOp-Da-Aca">
+                                <rect key="frame" x="97" y="28" width="126" height="28"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63F-Oo-0gC">
+                                <rect key="frame" x="271" y="445" width="33" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="240" verticalCompressionResistancePriority="240" image="Cupcake" translatesAutoresizingMaskIntoConstraints="NO" id="NZu-fE-4mi">
+                                <rect key="frame" x="27" y="64" width="267" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="bxn-VD-KOy"/>
+                                    <constraint firstAttribute="width" secondItem="NZu-fE-4mi" secondAttribute="height" multiplier="267:166" id="oPA-je-YLx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="240" verticalCompressionResistancePriority="740" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hK3-rw-VAR">
+                                <rect key="frame" x="24" y="238" width="272" height="199"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.99447513812154698" blue="0.73161271381316539" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DOp-Da-Aca" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="3aY-Vz-F7N"/>
+                            <constraint firstItem="NZu-fE-4mi" firstAttribute="top" secondItem="DOp-Da-Aca" secondAttribute="bottom" constant="8" id="5AF-7u-STK"/>
+                            <constraint firstItem="NZu-fE-4mi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6F1-Wx-eTw"/>
+                            <constraint firstItem="63F-Oo-0gC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="C7G-qi-MMh"/>
+                            <constraint firstItem="hK3-rw-VAR" firstAttribute="top" secondItem="NZu-fE-4mi" secondAttribute="bottom" constant="8" id="JsD-TX-pel"/>
+                            <constraint firstItem="DOp-Da-Aca" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K9I-DK-4U6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hK3-rw-VAR" secondAttribute="trailing" constant="8" id="ZM4-Dl-beO"/>
+                            <constraint firstItem="hK3-rw-VAR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="fRm-uZ-Ozx"/>
+                            <constraint firstItem="63F-Oo-0gC" firstAttribute="top" secondItem="hK3-rw-VAR" secondAttribute="bottom" constant="8" id="hWT-OF-e41"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="63F-Oo-0gC" secondAttribute="bottom" id="rZU-9E-Bd0"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="versionDescriptionLabel" destination="hK3-rw-VAR" id="beH-yq-aff"/>
+                        <outlet property="versionImageView" destination="NZu-fE-4mi" id="8Bf-5m-Km6"/>
+                        <outlet property="versionNameLabel" destination="DOp-Da-Aca" id="SwB-em-6P4"/>
+                        <outlet property="versionNumberLabel" destination="63F-Oo-0gC" id="NN7-9V-nmO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="263"/>
+            <point key="canvasLocation" x="514" y="121"/>
         </scene>
         <!--Android Table View Controller-->
         <scene sceneID="v7f-jb-wpy">
@@ -68,10 +115,13 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="MasterToDetail" id="MBb-H4-FHc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZ1-Rn-KYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="121"/>
+            <point key="canvasLocation" x="-19" y="134"/>
         </scene>
     </scenes>
     <resources>

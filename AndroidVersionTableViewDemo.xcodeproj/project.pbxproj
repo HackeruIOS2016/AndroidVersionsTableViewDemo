@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6DC9C0FA1CC4B27D00043473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9C0F91CC4B27D00043473 /* AppDelegate.swift */; };
-		6DC9C0FC1CC4B27D00043473 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9C0FB1CC4B27D00043473 /* ViewController.swift */; };
+		6DC9C0FC1CC4B27D00043473 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9C0FB1CC4B27D00043473 /* DetailViewController.swift */; };
 		6DC9C0FF1CC4B27D00043473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC9C0FD1CC4B27D00043473 /* Main.storyboard */; };
 		6DC9C1011CC4B27D00043473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC9C1001CC4B27D00043473 /* Assets.xcassets */; };
 		6DC9C1041CC4B27D00043473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC9C1021CC4B27D00043473 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		6DC9C0F61CC4B27D00043473 /* AndroidVersionTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndroidVersionTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC9C0F91CC4B27D00043473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6DC9C0FB1CC4B27D00043473 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DC9C0FB1CC4B27D00043473 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6DC9C0FE1CC4B27D00043473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DC9C1001CC4B27D00043473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DC9C1031CC4B27D00043473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				6DC9C0F91CC4B27D00043473 /* AppDelegate.swift */,
-				6DC9C0FB1CC4B27D00043473 /* ViewController.swift */,
+				6DC9C0FB1CC4B27D00043473 /* DetailViewController.swift */,
 				6DC9C10D1CC4B49600043473 /* DataSource.swift */,
 				6DC9C0FD1CC4B27D00043473 /* Main.storyboard */,
 				6DC9C10B1CC4B34B00043473 /* AndroidVersions.xcassets */,
@@ -146,7 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DC9C10E1CC4B49600043473 /* DataSource.swift in Sources */,
-				6DC9C0FC1CC4B27D00043473 /* ViewController.swift in Sources */,
+				6DC9C0FC1CC4B27D00043473 /* DetailViewController.swift in Sources */,
 				6DC9C1101CC4B58E00043473 /* AndroidTableViewController.swift in Sources */,
 				6DC9C0FA1CC4B27D00043473 /* AppDelegate.swift in Sources */,
 			);

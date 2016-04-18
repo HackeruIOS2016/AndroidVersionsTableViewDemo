@@ -53,8 +53,9 @@ class AndroidTableViewController: UITableViewController {
         
         cell.textLabel?.text = version.name
         cell.detailTextLabel?.text = version.version.description
-         
         
+        let versionImage = UIImage(named: version.name)
+        cell.imageView?.image =  versionImage
 
         
         return cell
