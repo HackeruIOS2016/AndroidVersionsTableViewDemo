@@ -36,18 +36,30 @@ class AndroidTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return versions.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("AndroidCell", forIndexPath: indexPath)
 
         // Configure the cell...
+        // let section = indexPath.section
+        let row = indexPath.row
+        
+        //get the current item that we want to display
+        let version = versions[row]
+        
+        cell.textLabel?.text = version.name
+        cell.detailTextLabel?.text = version.version.description
+         
+        
 
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
